@@ -1,0 +1,31 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[200],{91017:function(e,t,s){Promise.resolve().then(s.bind(s,29875))},78030:function(e,t,s){"use strict";s.d(t,{Z:function(){return c}});var r=s(2265);/**
+ * @license lucide-react v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let a=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),n=function(){for(var e=arguments.length,t=Array(e),s=0;s<e;s++)t[s]=arguments[s];return t.filter((e,t,s)=>!!e&&""!==e.trim()&&s.indexOf(e)===t).join(" ").trim()};/**
+ * @license lucide-react v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var l={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
+ * @license lucide-react v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=(0,r.forwardRef)((e,t)=>{let{color:s="currentColor",size:a=24,strokeWidth:i=2,absoluteStrokeWidth:c,className:o="",children:u,iconNode:d,...h}=e;return(0,r.createElement)("svg",{ref:t,...l,width:a,height:a,stroke:s,strokeWidth:c?24*Number(i)/Number(a):i,className:n("lucide",o),...h},[...d.map(e=>{let[t,s]=e;return(0,r.createElement)(t,s)}),...Array.isArray(u)?u:[u]])}),c=(e,t)=>{let s=(0,r.forwardRef)((s,l)=>{let{className:c,...o}=s;return(0,r.createElement)(i,{ref:l,iconNode:t,className:n("lucide-".concat(a(e)),c),...o})});return s.displayName="".concat(e),s}},83852:function(e,t,s){"use strict";s.d(t,{Z:function(){return r}});/**
+ * @license lucide-react v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let r=(0,s(78030).Z)("House",[["path",{d:"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8",key:"5wwlr5"}],["path",{d:"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",key:"1d0kgt"}]])},66706:function(e,t,s){"use strict";s.d(t,{Z:function(){return r}});/**
+ * @license lucide-react v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let r=(0,s(78030).Z)("RefreshCw",[["path",{d:"M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8",key:"v9h5vc"}],["path",{d:"M21 3v5h-5",key:"1q7to0"}],["path",{d:"M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16",key:"3uifl3"}],["path",{d:"M8 16H3v5",key:"1cv678"}]])},74740:function(e,t,s){"use strict";s.d(t,{Z:function(){return r}});/**
+ * @license lucide-react v0.469.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let r=(0,s(78030).Z)("WifiOff",[["path",{d:"M12 20h.01",key:"zekei9"}],["path",{d:"M8.5 16.429a5 5 0 0 1 7 0",key:"1bycff"}],["path",{d:"M5 12.859a10 10 0 0 1 5.17-2.69",key:"1dl1wf"}],["path",{d:"M19 12.859a10 10 0 0 0-2.007-1.523",key:"4k23kn"}],["path",{d:"M2 8.82a15 15 0 0 1 4.177-2.643",key:"1grhjp"}],["path",{d:"M22 8.82a15 15 0 0 0-11.288-3.764",key:"z3jwby"}],["path",{d:"m2 2 20 20",key:"1ooewy"}]])},16463:function(e,t,s){"use strict";var r=s(71169);s.o(r,"usePathname")&&s.d(t,{usePathname:function(){return r.usePathname}}),s.o(r,"useRouter")&&s.d(t,{useRouter:function(){return r.useRouter}}),s.o(r,"useSearchParams")&&s.d(t,{useSearchParams:function(){return r.useSearchParams}})},29875:function(e,t,s){"use strict";s.r(t),s.d(t,{default:function(){return c}});var r=s(57437),a=s(74740),n=s(66706),l=s(83852),i=s(16463);function c(){let e=(0,i.useRouter)();return(0,r.jsx)("div",{className:"min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4",children:(0,r.jsxs)("div",{className:"text-center max-w-md",children:[(0,r.jsxs)("div",{className:"mb-8 relative",children:[(0,r.jsx)("div",{className:"absolute inset-0 blur-2xl opacity-30 animate-pulse",children:(0,r.jsx)(a.Z,{className:"w-32 h-32 text-red-400 mx-auto"})}),(0,r.jsx)(a.Z,{className:"w-32 h-32 text-red-400 mx-auto relative z-10"})]}),(0,r.jsx)("h1",{className:"text-3xl font-bold text-white mb-4",children:"网络连接中断"}),(0,r.jsxs)("p",{className:"text-slate-400 mb-8",children:["看起来你正在离线状态，无法访问 TrendFlow 服务。",(0,r.jsx)("br",{}),"请检查网络连接后重试。"]}),(0,r.jsxs)("div",{className:"bg-slate-800/50 rounded-xl p-6 mb-8 border border-slate-700",children:[(0,r.jsxs)("h2",{className:"text-white font-semibold mb-4 flex items-center gap-2",children:[(0,r.jsx)("span",{className:"text-yellow-400",children:"\uD83D\uDCA1"}),"离线可用功能"]}),(0,r.jsxs)("ul",{className:"text-slate-300 text-sm space-y-2 text-left",children:[(0,r.jsxs)("li",{className:"flex items-center gap-2",children:[(0,r.jsx)("span",{className:"text-green-400",children:"✓"}),"查看已缓存的页面和数据"]}),(0,r.jsxs)("li",{className:"flex items-center gap-2",children:[(0,r.jsx)("span",{className:"text-green-400",children:"✓"}),"编辑和准备内容（稍后同步）"]}),(0,r.jsxs)("li",{className:"flex items-center gap-2",children:[(0,r.jsx)("span",{className:"text-green-400",children:"✓"}),"查看历史记录和统计数据"]})]})]}),(0,r.jsxs)("div",{className:"flex flex-col gap-3",children:[(0,r.jsxs)("button",{onClick:()=>{window.location.reload()},className:"w-full py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium rounded-xl transition-all flex items-center justify-center gap-2",children:[(0,r.jsx)(n.Z,{className:"w-5 h-5"}),"重试连接"]}),(0,r.jsxs)("button",{onClick:()=>{e.push("/")},className:"w-full py-3 bg-slate-700 hover:bg-slate-600 text-white font-medium rounded-xl transition-all flex items-center justify-center gap-2",children:[(0,r.jsx)(l.Z,{className:"w-5 h-5"}),"返回首页"]})]}),(0,r.jsx)("p",{className:"mt-8 text-xs text-slate-500",children:"提示: 安装TrendFlow到主屏幕，可享受更好的离线体验"})]})})}}},function(e){e.O(0,[971,23,744],function(){return e(e.s=91017)}),_N_E=e.O()}]);

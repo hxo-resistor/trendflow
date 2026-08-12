@@ -1,0 +1,19 @@
+"use strict";(()=>{var e={};e.id=1856,e.ids=[1856],e.modules={20399:e=>{e.exports=require("next/dist/compiled/next-server/app-page.runtime.prod.js")},30517:e=>{e.exports=require("next/dist/compiled/next-server/app-route.runtime.prod.js")},75686:(e,t,r)=>{r.r(t),r.d(t,{originalPathname:()=>m,patchFetch:()=>w,requestAsyncStorage:()=>d,routeModule:()=>u,serverHooks:()=>h,staticGenerationAsyncStorage:()=>l});var s={};r.r(s),r.d(s,{POST:()=>c});var o=r(49303),a=r(88716),n=r(60670),i=r(87070);let p=[{keyword:"智能宠物喂食器",url:"https://www.zhihu.com/question/12345",title:"智能宠物喂食器哪个牌子好？2024年深度测评",aeoScore:92,whyCited:"高权威度知乎回答，数据详实，引用多家品牌官方数据",strengths:["结构化数据丰富","有专业评测机构背书","FAQ完整"],weaknesses:["部分内容过时","缺少价格对比表格"]},{keyword:"智能宠物喂食器",url:"https://www.xiaohongshu.com/explore/67890",title:"用了半年智能喂食器，说点大实话...",aeoScore:85,whyCited:"真实用户体验分享，情感共鸣强，评论互动率高",strengths:["真实体验感强","有详细的使用场景描述","图片和视频丰富"],weaknesses:["主观性强","缺乏客观数据支撑"]},{keyword:"智能宠物喂食器",url:"https://blog.csdn.net/article/abc123",title:"智能宠物喂食器技术原理与选购指南",aeoScore:78,whyCited:"技术角度分析深入，适合专业人士参考",strengths:["技术参数详细","对比表格清晰"],weaknesses:["阅读门槛高","不够通俗"]}];async function c(e){try{let{keyword:t}=await e.json();if(!t)return i.NextResponse.json({error:"缺少必要参数: keyword"},{status:400});let r=function(e){var t;let r;let s=p.filter(t=>t.keyword===e||e.includes(t.keyword)||t.keyword.includes(e)),o=s.length>0?s.map(e=>({url:e.url,title:e.title,aeoScore:e.aeoScore,whyCited:e.whyCited,strengths:e.strengths,weaknesses:e.weaknesses})):p.slice(0,3).map(t=>({url:t.url,title:t.title.replace(/2024/g,e),aeoScore:t.aeoScore,whyCited:t.whyCited,strengths:t.strengths,weaknesses:t.weaknesses})),a=function(e,t){let r=[],s=50,o=new Set;return e.forEach(e=>{e.weaknesses.forEach(e=>o.add(e))}),r.push({step:1,action:`创建${t}的深度测评文章`,expectedImprovement:15,priority:1}),s+=15,o.has("缺少价格对比表格")&&(r.push({step:2,action:"添加详细的价格对比表格",expectedImprovement:10,priority:2}),s+=10),r.push({step:3,action:"添加完整的FAQ段落（至少5个问题）",expectedImprovement:12,priority:3}),s+=12,r.push({step:4,action:"添加Product和Review Schema标记",expectedImprovement:8,priority:4}),s+=8,r.push({step:5,action:"在文章开头添加数据摘要",expectedImprovement:5,priority:5}),s+=5,{steps:r,expectedScore:s=Math.min(100,s),timeline:"预计2-3周内完成所有优化步骤"}}(o,e),n=(t=a.expectedScore)>=90?"1-2周":t>=80?"2-4周":t>=70?"1-2个月":"2-3个月",i=(r=`## ${e} AI引用竞争分析报告
+
+### 当前Top 3来源分析
+
+`,o.forEach((e,t)=>{r+=`**#${t+1}** ${e.title}
+- AEO权威分: ${e.aeoScore}
+- 引用原因: ${e.whyCited}
+- 优势: ${e.strengths.join("、")}
+- 弱点: ${e.weaknesses.join("、")}
+
+`}),r+=`### 我们的优化策略
+
+预期可达到的AEO分数: **${a.expectedScore}**
+
+优化步骤:
+`,a.steps.forEach(e=>{r+=`${e.step}. ${e.action} (+${e.expectedImprovement}分)
+`}),r+=`
+### 预估进入Top 3时间
+根据当前优化计划，预计需要 **${a.timeline}**。`);return{keyword:e,currentTopSources:o,ourOptimizationPlan:a,estimatedTimeToTop3:n,analysisReport:i}}(t);return i.NextResponse.json({success:!0,...r,generatedAt:new Date().toISOString()})}catch(e){return console.error("Simulate API error:",e),i.NextResponse.json({error:"模拟失败"},{status:500})}}let u=new o.AppRouteRouteModule({definition:{kind:a.x.APP_ROUTE,page:"/api/aeo/simulate/route",pathname:"/api/aeo/simulate",filename:"route",bundlePath:"app/api/aeo/simulate/route"},resolvedPagePath:"C:\\Users\\Administrator\\.agnes\\temporary\\2026-08-08\\20260808_1\\work\\trendflow\\src\\app\\api\\aeo\\simulate\\route.ts",nextConfigOutput:"standalone",userland:s}),{requestAsyncStorage:d,staticGenerationAsyncStorage:l,serverHooks:h}=u,m="/api/aeo/simulate/route";function w(){return(0,n.patchFetch)({serverHooks:h,staticGenerationAsyncStorage:l})}}};var t=require("../../../../webpack-runtime.js");t.C(e);var r=e=>t(t.s=e),s=t.X(0,[8948,5972],()=>r(75686));module.exports=s})();

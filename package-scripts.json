@@ -1,0 +1,18 @@
+{
+  "name": "trendflow-scripts",
+  "version": "1.0.0",
+  "description": "TrendFlow v8.2 性能优化工具包",
+  "main": "index.js",
+  "scripts": {
+    "generate-vapid": "node scripts/generate-vapid-keys.js",
+    "optimize-images": "node scripts/optimize-images.js",
+    "analyze-bundle": "next build --profile && npx next-bundle-analyzer"
+  },
+  "dependencies": {
+    "web-push": "^3.6.7",
+    "sharp": "^0.33.4"
+  },
+  "devDependencies": {
+    "next-bundle-analyzer": "^0.6.0"
+  }
+}

@@ -1,0 +1,13 @@
+# User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://trendflow-fawn.vercel.app/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Disallow admin and API paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
