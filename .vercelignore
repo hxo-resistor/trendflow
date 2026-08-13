@@ -1,0 +1,59 @@
+# Dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output (we'll build on Vercel)
+.next
+out
+dist
+build
+
+# Source maps
+*.js.map
+*.map
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Environment files (except .env.local)
+.env.*
+!.env.local
+
+# Test
+coverage
+.nyc_output
+
+# Temporary files
+tmp
+temp
+*.tmp
+*.bak
+*.cache
+
+# Documentation (not needed for production)
+docs
+*.md
+!README.md
+
+# Scripts (not needed for production)
+scripts
+*.sh
+*.ps1
+
+# Tools
+.vercel
+.github
+.gitlab
