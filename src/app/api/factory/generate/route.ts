@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server"
+﻿import { NextRequest, NextResponse } from "next/server"
 import { generateContent } from "@/lib/intelligence-engine"
 import { matchProducts, injectProducts } from "@/lib/affiliate-utils"
 import type { Product } from "@/lib/affiliate-types"
@@ -219,4 +219,14 @@ function getBestPublishTime(platform: string): string[] {
     wechat: ["07:00-08:00", "12:00-13:00", "20:00-21:00"],
   }
   return schedules[platform] || schedules.xiaohongshu
+}
+/**
+ * 鑾峰彇鎺ュ彛璇存槑
+ */
+export async function GET() {
+  return NextResponse.json({
+    success: true,
+    message: "璇蜂娇鐢?POST 鏂规硶鎻愪氦鐢熸垚浠诲姟",
+    usage: "POST /api/factory/generate 甯?{ keyword, platforms, countPerPlatform, opportunity } 鍙傛暟"
+  })
 }

@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server"
+﻿import { NextRequest, NextResponse } from "next/server"
 
 /**
  * 实战内容生成API
@@ -143,4 +143,14 @@ function generatePublishPlan(contents: ContentItem[], days: number) {
   }
   
   return plan
+}
+/**
+ * 鑾峰彇鎺ュ彛璇存槑
+ */
+export async function GET() {
+  return NextResponse.json({
+    success: true,
+    message: "璇蜂娇鐢?POST 鏂规硶鎻愪氦鐢熸垚浠诲姟",
+    usage: "POST /api/battle/generate 甯?{ keyword, platforms, ... } 鍙傛暟"
+  })
 }

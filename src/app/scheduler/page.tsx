@@ -1,7 +1,7 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect } from 'react'
-import { Clock, Play, Pause, Settings, Plus, RefreshCw, AlertCircle, CheckCircle, Zap } from 'lucide-react'
+import { Clock, Play, Pause, Settings, Plus, RefreshCw, AlertCircle, CheckCircle, Zap, Search, MessageSquare, FileText, Eye, List } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 interface SchedulerTask {
@@ -140,7 +140,7 @@ export default function SchedulerPage() {
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-3">
             <div className={`w-3 h-3 rounded-full ${isRunning ? 'bg-green-500 animate-pulse' : 'bg-slate-500'}`} />
-            <span className="text-white font-medium">{isRunning ? '引擎运行中' : '引擎已停止'}</span>
+            <span className="text-white font-medium">{isRunning ? '引擎运行�? : '引擎已停�?}</span>
           </div>
           <Button 
             onClick={toggleEngine}
@@ -151,9 +151,9 @@ export default function SchedulerPage() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <StatBox label="待执行" value={stats.pending} color="text-yellow-400" />
-          <StatBox label="执行中" value={stats.running} color="text-blue-400" />
-          <StatBox label="已完成" value={stats.completed} color="text-green-400" />
+          <StatBox label="待执�? value={stats.pending} color="text-yellow-400" />
+          <StatBox label="执行�? value={stats.running} color="text-blue-400" />
+          <StatBox label="已完�? value={stats.completed} color="text-green-400" />
           <StatBox label="失败" value={stats.failed} color="text-red-400" />
         </div>
       </div>
@@ -209,21 +209,21 @@ export default function SchedulerPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">
             <ConfigItem
-              label="每小时搜索上限"
+              label="每小时搜索上�?
               value={config.maxSearchPerHour}
               min={10}
               max={100}
               onChange={(v) => setConfig(prev => ({ ...prev, maxSearchPerHour: v }))}
             />
             <ConfigItem
-              label="每小时评论上限"
+              label="每小时评论上�?
               value={config.maxCommentPerHour}
               min={1}
               max={20}
               onChange={(v) => setConfig(prev => ({ ...prev, maxCommentPerHour: v }))}
             />
             <ConfigItem
-              label="每小时发布上限"
+              label="每小时发布上�?
               value={config.maxPostPerHour}
               min={1}
               max={10}
@@ -232,14 +232,14 @@ export default function SchedulerPage() {
           </div>
           <div className="space-y-4">
             <ConfigItem
-              label="最小空闲时间(秒)"
+              label="最小空闲时�?�?"
               value={config.idleTimeMin}
               min={10}
               max={300}
               onChange={(v) => setConfig(prev => ({ ...prev, idleTimeMin: v }))}
             />
             <ConfigItem
-              label="最大空闲时间(秒)"
+              label="最大空闲时�?�?"
               value={config.idleTimeMax}
               min={30}
               max={600}
@@ -291,9 +291,9 @@ export default function SchedulerPage() {
                 <div className="flex items-center gap-4">
                   <div className="text-right">
                     <div className={`text-xs font-medium ${getTaskColor(task.status)}`}>
-                      {task.status === 'pending' && '待执行'}
-                      {task.status === 'running' && '执行中'}
-                      {task.status === 'completed' && '已完成'}
+                      {task.status === 'pending' && '待执�?}
+                      {task.status === 'running' && '执行�?}
+                      {task.status === 'completed' && '已完�?}
                       {task.status === 'failed' && '失败'}
                     </div>
                     <div className="text-slate-500 text-xs">
@@ -303,8 +303,7 @@ export default function SchedulerPage() {
                   
                   {task.retries > 0 && (
                     <span className="text-xs text-yellow-400">
-                      重试{task.retries}次
-                    </span>
+                      重试{task.retries}�?                    </span>
                   )}
                   
                   {task.error && (
@@ -324,10 +323,10 @@ export default function SchedulerPage() {
           <div>
             <h4 className="text-yellow-400 font-medium mb-1">安全提示</h4>
             <ul className="text-sm text-yellow-200/80 space-y-1">
-              <li>• 本系统采用严格的频率限制，防止账号被封禁</li>
-              <li>• 所有操作均在设定工作时间内执行，避免异常时段活动</li>
-              <li>• 随机延迟机制模拟人类行为，降低被检测风险</li>
-              <li>• 失败任务自动重试，确保执行成功率</li>
+              <li>�?本系统采用严格的频率限制，防止账号被封禁</li>
+              <li>�?所有操作均在设定工作时间内执行，避免异常时段活�?/li>
+              <li>�?随机延迟机制模拟人类行为，降低被检测风�?/li>
+              <li>�?失败任务自动重试，确保执行成功率</li>
             </ul>
           </div>
         </div>
